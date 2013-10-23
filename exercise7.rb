@@ -15,3 +15,11 @@ cohort_size(students)
 students[:cohort4] = 43
 
 cohort_size(students)
+
+def cohortplus5(cohort)
+  cohort.each do |key, value|
+    puts "#{key}: #{value * 1.05} students"
+  end
+end
+
+cohortplus5(students)
