@@ -23,3 +23,12 @@ def cohortplus5(cohort)
 end
 
 cohortplus5(students)
+
+def cohortminus2(cohort)
+    cohort.each do |k, v|
+    puts "#{k}: #{v} students"
+  end
+end
+
+students.delete(:cohort2)
+cohortminus2(students)
