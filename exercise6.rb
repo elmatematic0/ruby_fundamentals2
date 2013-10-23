@@ -9,6 +9,7 @@ def groceries
     puts "You need to pick up bananas"
   end
   puts grocery_list[1]
+  grocery_list.sort.each {|a| puts "* #{a}"}
 end
 
 groceries
