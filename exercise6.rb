@@ -10,6 +10,8 @@ def groceries
   end
   puts grocery_list[1]
   grocery_list.sort.each {|a| puts "* #{a}"}
+  grocery_list.delete("fish")
+  grocery_list.sort.each {|a| puts "* #{a}"}
 end
 
 groceries
